@@ -1,3 +1,55 @@
+// codewars level 5 challenge - https://www.codewars.com/kata/5279f6fe5ab7f447890006a7/train/javascript
+
+function pickPeaks(arr){
+    let position = []
+    let peaks = []
+    let longPeakCheck = false
+    let tempPosition = false
+    let tempPeak = false
+    
+      arr.forEach((item, index, array) => {
+        if(index == 0 || index == array.length -1){
+            return
+        }
+        if(item > array[index - 1] && item > array[index + 1]){
+            position.push(index)
+            peaks.push(item)
+            tempPosition = false
+            tempPeak = false
+            longPeakCheck = false
+            return
+        }
+        if(item == array[index - 1] && item == array[index + 1]){
+            return
+        }
+        if(item > array[index - 1] && item == array[index + 1]){
+            tempPosition = index
+            tempPeak = item
+            longPeakCheck = true
+            return
+        }
+        if(longPeakCheck && item > array[index + 1]){
+            position.push(tempPosition)
+            peaks.push(tempPeak)
+            tempPosition = false
+            tempPeak = false
+            longPeakCheck = false
+            return
+        }
+            tempPosition = false
+            tempPeak = false
+            longPeakCheck = false
+    
+          
+      });
+         return {'pos':position, 'peaks': peaks}
+      }
+    
+    
+    
+    
+
+
 // codewars level 5 challenge - https://www.codewars.com/kata/54e320dcebe1e583250008fd - working with factorial numbers
 function dec2FactString(nb) {
   	
