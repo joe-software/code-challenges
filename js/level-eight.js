@@ -1,3 +1,10 @@
+//  https://www.codewars.com/kata/5556282156230d0e5e000089/train/javascript - smple dna/rna conversion
+
+function DNAtoRNA(dna) {
+  return dna.split('').map(item => item == 'T' ? 'U' : item).join('')
+}
+
+
 //  https://www.codewars.com/kata/572059afc2f4612825000d8a/train/javascript - simple challenge to return the number of days in a month
 
 function howManydays(month){
