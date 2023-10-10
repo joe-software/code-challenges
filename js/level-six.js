@@ -1,3 +1,14 @@
+// codewars level 6 -  https://www.codewars.com/kata/5552101f47fc5178b1000050/train/javascript
+
+digPow = (n, p) => {
+  let total = 0;
+  String(n).split('').forEach((item, index) => {
+      total = total + (item ** (index + p))    
+  });
+ return total % n == 0 ? total/n : -1
+}
+
+
 // codewars level 6 - https://www.codewars.com/kata/541c8630095125aba6000c00/train/javascript
 
 function digitalRoot(n) {
