@@ -1,5 +1,12 @@
 
-//Issues with the codewars challenge
+// https://www.codewars.com/kata/558fc85d8fd1938afb000014/train/javascript
+
+sumTwoSmallestNumbers = (numbers) => {
+  let numSorted = numbers.sort((a, b) => 
+      a-b
+          )
+  return numSorted[0] + numSorted[1]
+}
 
 //codewars level 7 challenge - https://www.codewars.com/kata/57f609022f4d534f05000024/train/javascript
 
