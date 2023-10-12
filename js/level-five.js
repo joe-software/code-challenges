@@ -1,3 +1,19 @@
+// codewars level 5 challenge - https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/javascript
+
+function pigIt(str){
+    let answer = str.split(' ').map((item) => {
+        if(item == '!' || item == '?'){
+            return item
+        }
+        let itemArr = item.split('')
+        itemArr.push(itemArr[0])
+        itemArr.shift()
+        let itemStr = `${itemArr.join('')}ay`
+        return itemStr
+    })
+    return answer.join(' ')
+      }
+
 // codewars level 5 challenge - https://www.codewars.com/kata/5279f6fe5ab7f447890006a7/train/javascript
 
 function pickPeaks(arr){
