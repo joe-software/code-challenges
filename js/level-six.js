@@ -1,3 +1,17 @@
+// codewars level 6 -  https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript
+
+arrayDiff = (a, b) => {
+  let answer = a.map((item) => {
+      for(let i = 0; i<b.length;i++){
+          if(item == b[i]){
+              return
+          }
+      }
+      return item
+  }).filter(item => item != undefined)
+  return answer
+}
+
 // codewars level 6 -  https://www.codewars.com/kata/5552101f47fc5178b1000050/train/javascript
 
 digPow = (n, p) => {
