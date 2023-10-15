@@ -1,3 +1,8 @@
+// codewars level 7 challenge - https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/javascript
+
+reverseWords = str => {
+  return str.split(' ').map(item => item.split('').reverse().join('')).join(' ')
+  }
 
 // https://www.codewars.com/kata/558fc85d8fd1938afb000014/train/javascript
 
