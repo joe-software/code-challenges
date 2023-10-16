@@ -1,3 +1,10 @@
+// codewars level 7 challenge - https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript
+
+var isSquare = function(n){
+  return (Math.sqrt(n) == Math.floor(Math.sqrt(n)))
+}
+
+
 // codewars level 7 challenge - https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/javascript
 
 reverseWords = str => {
