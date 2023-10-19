@@ -1,3 +1,18 @@
+// codewars level 6 - https://www.codewars.com/kata/5526fc09a1bbd946250002dc/train/javascript
+
+function findOutlier(integers){
+  let odd = []
+  let even = []
+  integers.forEach(element => {
+      if(element % 2 == 0){
+          even.push(element)
+      } else {
+          odd.push(element)
+      }
+  });
+  return odd.length == 1 ? odd[0] : even[0]
+}
+
 // codewars level 6 -  https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript
 
 arrayDiff = (a, b) => {
