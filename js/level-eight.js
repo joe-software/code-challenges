@@ -1,3 +1,10 @@
+// https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
+
+function lovefunc(flower1, flower2){
+  return (flower1 + flower2) % 2 != 0
+}
+
+
 // https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/javascript - simple factor equation 
 
 function checkForFactor (base, factor) {
