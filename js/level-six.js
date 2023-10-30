@@ -1,3 +1,26 @@
+// https://www.codewars.com/kata/515decfd9dcfc23bb6000006/train/javascript
+
+function isValidIP(str) {
+  let answer = true
+  let strChar = str.split('')
+  let strQuar = str.split('.')
+  if(strChar.includes(' ') || strChar.includes('e') || strChar.includes('/') || strChar.includes('..') || strChar.includes('-') || strChar.includes('\n')){
+    answer = false
+  }
+  strQuar.forEach(item => {
+    if(Number(item) < 0 || Number(item) > 255 || item == '' || item % 1 != 0){
+      answer = false
+    }
+  })
+  strQuar = strQuar.filter(item => {
+    return (item.length > 1 && item[0] != '0' || item.length == 1 )
+  })
+  if(strQuar.length != 4){
+    answer = false
+  }
+  return answer
+  }
+
 // codewars level 6 - https://www.codewars.com/kata/5526fc09a1bbd946250002dc/train/javascript
 
 function findOutlier(integers){
