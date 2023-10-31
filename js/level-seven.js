@@ -1,3 +1,19 @@
+// https://www.codewars.com/kata/544aed4c4a30184e960010f4/train/javascript
+
+function divisors(integer) {
+  let finalArr = [];
+  let count = 0;
+ for(let i = 2; i < integer - 1; i++)
+ if(integer % i == 0){
+  count ++
+  finalArr.push(i)
+ }
+
+return count == 0 ? `${integer} is prime` : finalArr
+
+};
+
+
 // codewars level 7 challenge - https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript
 
 var isSquare = function(n){
