@@ -1,3 +1,21 @@
+// https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript
+
+function toCamelCase(str){
+  if(str == ''){
+    return ''
+  }
+  let splitStr = str.split('-').join('_').split('_')
+  splitStr = splitStr.map((item, i) => {
+    if(i == 0){
+      return item
+    }
+    item = item.split('')
+    item[0] = item[0].toUpperCase()
+    return item.join('')
+  })
+  return splitStr.join('')
+    }
+
 // https://www.codewars.com/kata/515decfd9dcfc23bb6000006/train/javascript
 
 function isValidIP(str) {
