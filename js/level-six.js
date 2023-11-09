@@ -1,3 +1,18 @@
+// https://www.codewars.com/kata/554ca54ffa7d91b236000023/train/javascript
+
+function deleteNth(arr,n){
+  let obj = {}
+  let result = []
+
+  arr.forEach(element => {
+      obj[element] ? obj[element] = (obj[element] + 1): obj[element] = 1
+      obj[element] > n ?  null : result.push(element)
+  });
+  return result
+  
+}
+
+
 // https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript
 
 function toCamelCase(str){
