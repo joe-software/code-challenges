@@ -1,3 +1,22 @@
+// https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript
+
+var uniqueInOrder=function(iterable){
+  let placeholder = iterable
+  if(typeof iterable == "string"){
+      placeholder = placeholder.split('')
+  }
+  let result = []
+  let prevValue
+  placeholder.forEach((element, i) => {
+      if(prevValue != element){
+          result.push(element)
+      }
+      prevValue = element
+  });
+  return result
+}
+
+
 // https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/javascript
 
 
