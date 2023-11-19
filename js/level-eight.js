@@ -1,3 +1,9 @@
+// https://www.codewars.com/kata/56dec885c54a926dcd001095/train/javascript
+
+function opposite(number) {
+  return (number * -1)
+}
+
 // https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
 
 function lovefunc(flower1, flower2){
