@@ -1,3 +1,42 @@
+// https://www.codewars.com/kata/57b06f90e298a7b53d000a86/train/javascript
+
+function queueTime(customers, n) {
+  // create a counter to capture total time
+  let total = 0;
+  //create array with a 0 starting value for each till
+  let tills = []
+  for (let i = 0; i < n; i++){
+    tills.push(0)
+  }
+  // function in while loop to ensure continues while there are still people in the queue
+  while(customers.length > 0){
+    if(tills.includes(0)){
+      // if tills include a 0 the till gets given a new customer
+      tills.map( (item, i, array) => {
+        if(item == 0){
+          let newCustomer = customers[0]
+          tills[i] = (newCustomer||0)
+          console.log(`new customer: ${newCustomer}, mathmax: ${Math.max(...array)}`)
+          if(newCustomer > Math.max(...array)){        
+            total = total + (newCustomer - Math.max(...array))
+          }
+          customers.shift()
+        } 
+      })
+    } else {
+      // if does not contain a zero then a minute passes
+      tills.map((item, i) => {
+        tills[i] = item - 1
+      })
+    }     
+  }
+
+  console.log(total, tills)
+
+}
+
+queueTime([1, 2, 1, 1], 2)
+
 // https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript
 
 var uniqueInOrder=function(iterable){
