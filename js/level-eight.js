@@ -1,6 +1,18 @@
+// https://www.codewars.com/kata/57a0885cbb9944e24c00008e/train/javascript
+
+function removeExclamationMarks(s) {
+  return s.split('').filter( i => i != '!').join('');
+  }
+
+removeExclamationMarks('testing!!')
+
 // https://www.codewars.com/kata/50654ddff44f800200000007/train/javascript
 
+function solution(a, b){
+  return a.length < b.length ? a+b+a:b+a+b;
+}
 
+console.log(solution('a','b'))
 
 
 // https://www.codewars.com/kata/56dec885c54a926dcd001095/train/javascript
