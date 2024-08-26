@@ -1,3 +1,18 @@
+// https://www.codewars.com/kata/57faf12b21c84b5ba30001b0/train/javascript
+
+function remove (string) {
+  let result = string.split('').map((item, i, array) => {
+    if((item == '!')){
+      return ''
+    } else {
+      return item
+    }
+  }).join('')
+  return result + '!'
+}
+
+remove('!test')
+
 // https://www.codewars.com/kata/57a0885cbb9944e24c00008e/train/javascript
 
 function removeExclamationMarks(s) {
