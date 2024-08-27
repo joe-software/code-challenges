@@ -1,3 +1,23 @@
+// https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript
+
+function duplicateEncode(word){
+  // Convert word to a lowercase array
+  let result = word.toLowerCase().split('')
+  // create an object to hold the counter
+  let letterCounterObj = {}
+  // for each item in the array, create a key in letterCounterObj with value 1, if it already exists add 1 to the value, this will count how many times each item appears
+  result.forEach(item => !letterCounterObj[item] ? letterCounterObj[item] = 1 : letterCounterObj[item] ++
+  )
+  // create a new string, using map to check how many times the counter has referenced the value, and then convert to either ( or )
+  let newResult = result.map(item => {
+    return letterCounterObj[item] > 1 ? ')' : '(' 
+  }).join('')
+
+  return newResult
+}
+
+duplicateEncode('TeSt')
+
 // https://www.codewars.com/kata/57b06f90e298a7b53d000a86/train/javascript
 
 function queueTime(customers, n) {
