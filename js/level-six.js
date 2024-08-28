@@ -1,3 +1,29 @@
+// https://www.codewars.com/kata/586d6cefbcc21eed7a001155/train/javascript
+
+function longestRepetition(s) {
+  let dividedStringArr = []
+  let tempStrArr = []
+  let result = ["", 0]
+  s.split('').forEach((item, i) => {
+    if(tempStrArr.length == 0 || tempStrArr[0] == item){
+      tempStrArr.push(item)
+    } else {
+      dividedStringArr.push(tempStrArr.join(''))
+      tempStrArr = []
+      tempStrArr.push(item)
+    }
+    dividedStringArr.push(tempStrArr.join(''))
+  })
+  dividedStringArr.forEach(item => {
+    if(item.length > result[1]){
+      result = [item[0], item.length]
+    }
+  })
+
+  return result
+}
+longestRepetition('bbbaaabaaaa')
+
 // https://www.codewars.com/kata/56a5d994ac971f1ac500003e/train/javascript
 
 function longestConsec(strarr, k) {
