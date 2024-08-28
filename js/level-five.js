@@ -1,3 +1,21 @@
+// https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/javascript
+
+function moveZeros(arr) {
+    let resultArr = arr
+    let counter = []
+    resultArr = resultArr.filter(item => {
+        if(item == 0 && typeof item == 'number'){
+            counter.push(item)
+        }
+        return (item !== 0)
+    }
+    )
+    counter.forEach(item => resultArr.push(item))
+    return resultArr
+  }
+
+  moveZeros([1, 2, 0, 0, false])
+
 // codewars level 5 challenge - https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/javascript
 
 function pigIt(str){
