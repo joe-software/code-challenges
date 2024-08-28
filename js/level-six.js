@@ -1,3 +1,27 @@
+// https://www.codewars.com/kata/56a5d994ac971f1ac500003e/train/javascript
+
+function longestConsec(strarr, k) {
+  if(k <= 0 || strarr.length < k || strarr == 0){
+    return ''
+  }
+  let answer = ''
+  strarr.forEach((item, i) => {
+    let compareValue = item
+    for(let j = 1; j < k; j++){
+      if(!strarr[j+i]){
+        return
+      }
+      compareValue = compareValue + strarr[j+i]
+    }
+    if(compareValue.length > answer.length){
+      answer = compareValue
+    }
+  })
+  return answer
+}
+
+longestConsec(['test', 'test1', 'test22', 'test333'], 3)
+
 // https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript
 
 function duplicateEncode(word){
