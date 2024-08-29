@@ -1,3 +1,18 @@
+// https://www.codewars.com/kata/55f2b110f61eb01779000053/train/javascript
+
+function getSum(a, b)
+{
+   let max = Math.max(a, b)
+   let min = Math.min(a, b)
+   let result = 0
+   for(i = min; i <= max; i++){
+    result = result + i
+   }
+   console.log(result)
+
+}
+getSum(10, -1)
+
 // https://www.codewars.com/kata/544aed4c4a30184e960010f4/train/javascript
 
 function divisors(integer) {
