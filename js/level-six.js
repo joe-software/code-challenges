@@ -1,3 +1,25 @@
+// https://www.codewars.com/kata/5842df8ccbd22792a4000245/train/javascript
+
+function expandedForm(num) {
+  let expandedArr = []
+  let numArr = num.toString().split('').reverse()
+  numArr.forEach((item,i) => {
+    let multiplier = 1
+    if(item ==0){
+      return
+    } else {
+      for( j = 0; j < i; j++){
+        multiplier = multiplier * 10
+      }
+      expandedArr.push(multiplier * item)
+    }
+    console.log(expandedArr)
+  })
+  return expandedArr.reverse().join(' + ')
+}
+
+expandedForm(120)
+
 // https://www.codewars.com/kata/586d6cefbcc21eed7a001155/train/javascript
 
 function longestRepetition(s) {
