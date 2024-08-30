@@ -8,7 +8,7 @@ function getSum(a, b)
    for(i = min; i <= max; i++){
     result = result + i
    }
-   console.log(result)
+   return result
 
 }
 getSum(10, -1)

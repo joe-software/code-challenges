@@ -1,3 +1,22 @@
+// https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript
+
+function duplicateCount(text){
+  let result = 0
+  let textArr = text.toLowerCase().split('')
+  let countObj = {}
+  textArr.forEach(item => {
+    !countObj[item] ? countObj[item] = 1 : countObj[item] = countObj[item] + 1
+  })
+  Object.values(countObj).forEach(item => {
+    if(item > 1){
+      result++
+    }
+  })
+  return result
+}
+
+duplicateCount('testing')
+
 // https://www.codewars.com/kata/5842df8ccbd22792a4000245/train/javascript
 
 function expandedForm(num) {
