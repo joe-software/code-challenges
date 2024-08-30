@@ -1,3 +1,20 @@
+// https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript
+
+function remove (string) {
+  let notExclaimation = false
+  let answer =  string.split('').reverse()
+  answer = answer.filter((item, i, arr) => {
+    if(item != '!'){
+      notExclaimation = true
+    }
+    if(notExclaimation == false || item != '!'){
+      return item
+    }
+  })
+  return answer.reverse().join('')
+}
+remove('!test!!')
+
 // https://www.codewars.com/kata/55f2b110f61eb01779000053/train/javascript
 
 function getSum(a, b)
