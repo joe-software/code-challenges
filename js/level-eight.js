@@ -1,3 +1,17 @@
+// https://www.codewars.com/kata/5a07e5b7ffe75fd049000051/train/javascript
+
+function sorter(textbooks) {
+  return textbooks.sort((a, b) => {
+    if(a.toLowerCase() > b.toLowerCase()){
+      return 1
+    } else {
+      return -1
+    }
+  })
+}
+
+sorter(['algebra', 'history', 'Geometry', 'English'])
+
 // https://www.codewars.com/kata/57faf12b21c84b5ba30001b0/train/javascript
 
 function remove (string) {
