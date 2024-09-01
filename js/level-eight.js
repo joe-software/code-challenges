@@ -1,3 +1,10 @@
+// https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  let result =  (sonYearsOld * 2) - dadYearsOld
+  return result > 1 ? result : result * -1
+}
+
 // https://www.codewars.com/kata/5a07e5b7ffe75fd049000051/train/javascript
 
 function sorter(textbooks) {
