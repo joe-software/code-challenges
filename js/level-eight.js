@@ -1,3 +1,9 @@
+// https://www.codewars.com/kata/5769b3802ae6f8e4890009d2/train/javascript
+
+function removeEveryOther(arr){
+  return arr.filter((item, i) => (i) % 2 == 0)
+}
+
 // https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
 
 function twiceAsOld(dadYearsOld, sonYearsOld) {
