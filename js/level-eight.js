@@ -1,3 +1,10 @@
+// https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/javascript
+
+function abbrevName(name){
+  let nameArr = name.split(' ')
+  return `${nameArr[0][0].toUpperCase()}.${nameArr[1][0].toUpperCase()}`
+}
+
 // https://www.codewars.com/kata/5769b3802ae6f8e4890009d2/train/javascript
 
 function removeEveryOther(arr){
