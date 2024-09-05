@@ -1,3 +1,20 @@
+// https://www.codewars.com/kata/5839edaa6754d6fec10000a2/train/javascript
+
+function findMissingLetter(array)
+{
+  let charHoldingVar, result
+  array.forEach((item, i) => {
+    let charCode = item.charCodeAt(0)
+    if(i != 0 && (charHoldingVar + 1 != charCode)){
+      result = String.fromCharCode(charCode-1)
+    }
+    charHoldingVar = charCode
+  })
+  return result
+}
+
+findMissingLetter(['a', 'b', 'c', 'e'])
+
 // https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript
 
 function duplicateCount(text){
