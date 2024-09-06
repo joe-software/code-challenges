@@ -1,3 +1,23 @@
+// https://www.codewars.com/kata/55c45be3b2079eccff00010f/javascript
+
+function order(words){
+  if(words == ""){
+    return ""
+  }
+ let sortingObj = {1:'', 2:'', 3:'', 4:'', 5:'', 6:'', 7:'', 8:'', 9:''}
+ let sentenceArr = words.split(' ')
+ sentenceArr.forEach(item => {
+  let wordArr = item.split('')
+  wordArr.forEach(letter => {
+    if(sortingObj[letter] == ''){
+      sortingObj[letter] = item
+    }
+  })
+ })
+ let sortedArr = Object.values(sortingObj).filter(item => item != "")
+ return sortedArr.join(' ')
+}
+
 // https://www.codewars.com/kata/5839edaa6754d6fec10000a2/train/javascript
 
 function findMissingLetter(array)
