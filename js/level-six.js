@@ -1,3 +1,18 @@
+// https://www.codewars.com/kata/5277c8a221e209d3f6000b56/train/javascript
+
+function validBraces(braces){
+
+  let bracesString = braces
+  while(bracesString.includes('()') == true || bracesString.includes('[]') == true || bracesString.includes('{}') == true){
+    bracesString = bracesString.split('()').join('')
+    bracesString = bracesString.split('[]').join('')
+    bracesString = bracesString.split('{}').join('')
+  }
+  return bracesString == "" ? true : false
+}
+
+validBraces('({})[)(]')
+
 // https://www.codewars.com/kata/55c45be3b2079eccff00010f/javascript
 
 function order(words){
