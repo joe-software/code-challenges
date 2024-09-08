@@ -1,3 +1,18 @@
+// https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript
+
+function disemvowel(str) {
+  let list = 'AEIOUaeiou'
+  return str.split('').filter(item => {
+    if(list.includes(item) == false){
+      return item
+    }
+  }).join('')
+}
+
+disemvowel()
+
+
+
 // https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript
 
 function remove (string) {
