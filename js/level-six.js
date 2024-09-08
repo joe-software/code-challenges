@@ -1,3 +1,17 @@
+// https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript
+
+function count(string) {
+  if(string == ''){
+    return {}
+  }
+  let countObj = {}
+  string.split('').forEach(item => {
+    return !countObj[item] ? countObj[item] = 1 : countObj[item]++ 
+  })
+  return countObj
+}
+count('ajiidsndsnf')
+
 // https://www.codewars.com/kata/5277c8a221e209d3f6000b56/train/javascript
 
 function validBraces(braces){
