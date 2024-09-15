@@ -1,3 +1,12 @@
+// https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/javascript
+
+function arrayPlusArray(arr1, arr2) {
+  let total = 0
+  arr1.forEach(item => total = total + item)
+  arr2.forEach(item => total = total + item)
+  return total;
+}
+
 // https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/javascript
 
 function abbrevName(name){
