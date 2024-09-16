@@ -1,3 +1,9 @@
+// https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145/train/javascript
+
+function hoopCount (n) {
+  return n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it";
+}
+
 // https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/javascript
 
 function arrayPlusArray(arr1, arr2) {
