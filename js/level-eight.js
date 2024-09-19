@@ -1,3 +1,10 @@
+// https://www.codewars.com/kata/55cbd4ba903825f7970000f5/train/javascript
+
+function getGrade (s1, s2, s3) {
+  let averageScore = (s1 + s2 + s3) / 3
+  return averageScore < 60 ? 'F' : averageScore < 70 ? 'D' : averageScore < 80 ? 'C' : averageScore < 90 ? 'B' : 'A'
+}
+
 // https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145/train/javascript
 
 function hoopCount (n) {
