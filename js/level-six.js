@@ -1,3 +1,27 @@
+// https://www.codewars.com/kata/5780c47a9fb2a5308f000124/train/javascript
+
+function verify(tiles){
+  let tileArr = tiles.split(' ')
+  let windObj = {'1z':1, '2z':1,'3z':1,'4z':1}
+  let pairValue = ''
+  let pairCounter = 0
+  tileArr.forEach(item => {
+    if(windObj[item] == true){
+      windObj[item]  = windObj[item] + 1
+    }
+    if(pairValue == '' || pairValue == item){
+      pairValue = item
+      pairCounter ++
+    }
+  })
+  console.log(windObj)
+  if(windObj['1z'] == 3 && windObj['1z'] == 3 && windObj['1z'] == 3 && windObj['1z'] == 3 && windObj['1z'] == 3 && pairCounter == 2){
+    return true
+  } else {
+    return false
+  }
+  
+}
 // https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript
 
 function count(string) {
