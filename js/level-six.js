@@ -1,3 +1,19 @@
+// https://www.codewars.com/kata/5603002927a683441f0000cb/train/javascript
+
+function checkAvailability(schedule, currentTime) {
+  let availability = true
+  let convertedCurrentTime = currentTime.split(':').join('')
+  schedule.forEach(item => {
+    let appStart = item[0].split(':').join('')
+    let appEnd = item[1].split(':').join('')
+    if(convertedCurrentTime >= appStart && convertedCurrentTime < appEnd){
+      availability = item[1]
+    }
+  })
+  console.log(availability)
+  return availability
+}
+
 // https://www.codewars.com/kata/5780c47a9fb2a5308f000124/train/javascript
 function verify(tiles){
   let tileArr = tiles.split(' ')
