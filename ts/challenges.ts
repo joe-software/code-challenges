@@ -1,3 +1,11 @@
+// https://www.codewars.com/kata/56f6ad906b88de513f000d96/train/typescript
+
+export class Kata {
+    public static bonusTime(salary:number, bonus:boolean):string {
+      return bonus ? `£${salary * 10}` : `£${salary}`
+    }
+}
+
 // https://www.codewars.com/kata/556deca17c58da83c00002db/train/typescript - level 6
 
 export function tribonacci([a, b, c]: [number, number, number], n: number): number[] {
