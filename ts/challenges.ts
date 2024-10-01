@@ -1,3 +1,10 @@
+// https://www.codewars.com/kata/544675c6f971f7399a000e79/train/typescript
+
+export function stringToNumber(str: string): number {
+  let convertVar: number|string
+  convertVar = Number(str)
+  return convertVar
+}
 // https://www.codewars.com/kata/6444f6b558ed4813e8b70d43/train/typescript
 
 export function graph(arr: number[]): string {
