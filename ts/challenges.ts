@@ -1,3 +1,15 @@
+// https://www.codewars.com/kata/554b4ac871d6813a03000035/train/typescript
+
+export class Kata {
+  static highAndLow(numbers: string): string {
+  let numArr: number[] = numbers.split(' ').map((item) => +item
+  )
+  let max: number = Math.max(...numArr)
+  let min: number = Math.min(...numArr)
+  return `${max} ${min}`
+}
+}
+
 // https://www.codewars.com/kata/544675c6f971f7399a000e79/train/typescript
 
 export function stringToNumber(str: string): number {
@@ -41,11 +53,11 @@ export function graph(arr: number[]): string {
 
 // https://www.codewars.com/kata/56f6ad906b88de513f000d96/train/typescript
 
-export class Kata {
-    public static bonusTime(salary:number, bonus:boolean):string {
-      return bonus ? `£${salary * 10}` : `£${salary}`
-    }
-}
+// export class Kata {
+//     public static bonusTime(salary:number, bonus:boolean):string {
+//       return bonus ? `£${salary * 10}` : `£${salary}`
+//     }
+// }
 
 // https://www.codewars.com/kata/556deca17c58da83c00002db/train/typescript - level 6
 
