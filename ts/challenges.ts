@@ -1,3 +1,10 @@
+// https://www.codewars.com/kata/57eae65a4321032ce000002d/train/typescript
+
+export const fakeBin = (x:string):string => {
+  return x.split('').map(item => Number(item) < 5 ? 0 : 1).join('')
+};
+
+
 // https://www.codewars.com/kata/554b4ac871d6813a03000035/train/typescript
 
 export class Kata {
