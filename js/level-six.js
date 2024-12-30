@@ -1,3 +1,17 @@
+// https://www.codewars.com/kata/5592e3bd57b64d00f3000047/train/javascript
+
+function findNb(m) {
+  let n = -1
+  let total = 0;
+for(i == 1; i < m + 1; i++){
+  total = total + i ^ 3
+  if(total == m){
+    n = i
+  }
+}
+console.log(n)
+}
+
 // https://www.codewars.com/kata/5603002927a683441f0000cb/train/javascript
 
 function checkAvailability(schedule, currentTime) {
