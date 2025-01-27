@@ -1,3 +1,14 @@
+// Level 7 challenge - https://www.codewars.com/kata/555eded1ad94b00403000071/train/javascript
+
+function SeriesSum(n) {
+  let total = 0
+  for(let i = 1; i <= n; i++)
+  {
+      total = total + (1 / (((i - 1) * 3) + 1))
+  }
+  return String(total.toFixed(2))
+}
+
 // https://www.codewars.com/kata/5648b12ce68d9daa6b000099/train/javascript
 
 var number = function(busStops){
